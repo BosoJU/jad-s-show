@@ -1,5 +1,7 @@
 package com.jad.show;
 
+import com.jad.customer.ISpectator;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -15,5 +17,9 @@ public class StreetShow extends Show {
 
     public List<String> getPerformers() {
         return Collections.unmodifiableList(this.performers);
+    }
+
+    public void askToWatch (final ISpectator iSpectator){
+        iSpectator.watch(this);
     }
 }

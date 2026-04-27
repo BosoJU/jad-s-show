@@ -1,5 +1,7 @@
 package com.jad.show;
 
+import com.jad.customer.ISpectator;
+
 public abstract class Show implements IShow{
     private final String name;
     private final String description;
